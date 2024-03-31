@@ -1,0 +1,511 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clean {
+    clear: both;
+}
+
+#header { /*menu bar*/
+    /* width: 100% top left right replace width*/
+    height: 46.5px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow: visible;
+    z-index: 100;  
+}
+
+.search_button {
+    position: relative;
+    line-height: 46.5px;
+    right: 13px;
+}
+
+.search-icon {
+    color: #fff;
+    float: right;
+    position: relative;
+    right: -15px;
+    top: -50px;
+    padding: 17.3px;;
+    font-size: normal;
+}
+
+ 
+.search-icon:hover {
+    background: #f44336;
+    cursor: pointer;
+}
+
+.fa-caret-down {
+    position: relative;
+    font-size: 13px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+#nav > li > a {
+    color: white;
+}
+#nav li a {
+    text-decoration: none;
+    padding: 0 24px;
+    display: inline-block;
+    line-height: 46.5px;
+    overflow: visible;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .subNav{
+    display: block;
+}
+
+#nav > li:hover > a, #nav .dropdown li:hover a {
+    background: #ccc;
+    color: black;
+    
+}
+#nav .dropdown li:hover a {
+    background: #ccc;
+    color: black;
+}
+
+.subNav {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
+    left: -5px;  
+    display: none;
+}
+
+.subNav li, a {
+    color: black;
+    min-width: 100%;
+}
+
+.dropdown > a > i {
+    position: relative;
+    top: -2px;
+    right: -5px;
+    bottom: 3px
+}
+
+#slider {
+    padding-top: 50%;
+    margin-top: 46px;
+    background-image: url("/assets\ /img/slider_2.jpeg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    /*another way: */
+    /*background: url('/assets\ /img/slider_2.jpeg') top center / cover no-repeat*/
+}
+
+#slider .text-content {
+    position: absolute;
+    bottom: 100px;
+    left: 50vw;
+    color: #F2F7FA;
+    font-size: 3.3vw;
+    transform: translateX(-50%); 
+    /* left or right will align with the first character
+    Use transform (translateX to align by horizontal) */
+}
+
+#slider .text-heading {
+    text-align: center;
+}
+
+#slider .text-description {
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+#content .section-content {
+    width: 800px;
+    padding-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+}
+
+#content .section-heading {
+    font-weight: light;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    font-size: 30px;
+    margin: 10px 10px;
+}
+
+#content .section-logan {
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    margin: 15px 0px;
+    opacity: 0.5;
+}
+
+#content .section-description {
+    margin: 15px 0px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;   
+}
+
+#content .member-list {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+#content .member-items {
+    /* 
+    float: left;
+    width: calc(100%/3); 
+    this replace the display of parent element
+    */
+    text-align: center;
+    margin-top: 40px;
+}
+
+#content .member-name {
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+#content .member-image {
+    width: 60%;
+    margin-left: 51px;
+    border-radius: 5px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.tour-section .section-content {
+    color: #fff;
+}
+
+.tour-section .book-tickets {
+    background-color: #fff;
+    color: #ccc; 
+    margin-top: 40px;
+}
+
+.tour-section .book-tickets li {
+    font-size: 15px;
+    color: #757575;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sold-out {
+    color: #fff;
+    background-color: #f44336;
+    padding: 2px 8px;
+    margin: 2px 0 0 18px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.number {
+    color: #fff;
+    background-color: #000;
+    padding: 2px 8px;
+    margin: 0 15px 0 0;
+    font-size: 15px;
+    width: 25px;
+    height: 25px;
+    font-family: sans-serif;
+    float: right;
+    border-radius: 13px; 
+    text-align: center;   
+}
+
+
+.tour-section .tickets {
+    margin: 30px -10px 0 -10px;
+    background-color: #000;
+    justify-content: space-between;
+}
+
+.tour-section .ticket {
+    float: left;
+    width: calc(100%/3);
+    padding: 0 10px;
+    margin-bottom: 100px;
+}
+
+.tour-section .ticket img {
+    width: 100%;
+    display: block;
+}
+
+.tour-section .ticket img:hover {
+    opacity: 0.5;
+}
+
+.tour-section .ticket .place-list {
+    font-family: sans-serif;
+    background-color: #fff;
+    padding: 25px 16px;
+    font-size: 15px;
+}
+
+.city-name {
+    font-weight: 520;
+    color: #000;
+    margin: -8px 0 15px 0;
+}
+
+.date {
+    color: #898686;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+.descript {
+    color: #000;
+    margin: 15px 0;
+}
+
+.buy-ticket {
+    background-color: #000;
+    margin: 0 0 30px;
+    padding: 8px 16px;
+}
+
+.buy-ticket:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.row {
+    padding: 8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+    padding: 0 8px;
+}
+
+.col-full {
+    width: 100%;
+    padding: 8px;
+}
+
+.contact-content {
+    margin-top: 50px;
+}
+
+.contact-form {
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.contact-form .form-control {
+    padding: 8px;
+    border: 1px solid #dcd9d9;
+    width: 100%;
+}
+
+.contact-info {
+    line-height: 1.5;
+    font-size: 18px;
+    padding-right: 16px;
+}
+
+.contact-info i[class="fa"] {
+    display: inline-block;
+    width: 35px;
+}
+
+.mt-8 {
+    position: relative; 
+    top: -32px;
+}
+
+.send-button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 16px 0;
+    float: right;
+    position: relative;
+    right: 16px;
+    top: -40px;
+}
+
+.send-button:hover {
+    background-color: #c8c2c2;
+    color: #000;
+}
+
+.social-media {
+    text-align: center;
+    padding: 64px 16px;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-media i[class="fa"] {
+    cursor: pointer;
+}
+
+.social-media a:hover {
+    opacity: 0.5;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex /*flex - change when finished*/;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100%-30px);
+}
+
+.modal-close {
+    color: #fff;
+    float: right;
+    padding: 8px 16px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background-color: #898686;
+}
+
+.modal-header {
+    color: #fff;
+    padding: 32px 16px;
+    background-color: #3f3f3f;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px 0 10px 0;
+}
+
+.modal-body {
+    padding: 0.15px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.model-label {
+    display: block;
+    margin: 10px 0 -5px 0;
+    line-height: 1.5;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.modal-button1 {
+    margin: 16px 0;
+    padding: 16px;
+    background-color: #3f3f3f;
+    color: #fff; 
+    width: 100%;
+}
+
+.modal-button1:hover {
+    background-color: #898686;
+}
+
+.modal-button2 {
+    background-color: #f44336;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 16px 0;
+}
+
+.modal-help {
+    margin-left: -10px;
+    float: right;
+    margin: 15px 0;
+}
+
+.modal-help a {
+    color: #2196F3;
+    border-bottom: 1px solid #1589e8;
+}
+
+/* Add this CSS to your existing styles.css file */
+
+.payment-section {
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.payment-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.payment-section p {
+    margin-bottom: 20px;
+}
+
+.payment-section form {
+    margin-bottom: 10px;
+}
+
+.payment-section label {
+    margin-right: 10px;
+}
+
+.payment-section button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.payment-section button:hover {
+    background-color: #45a049;
+}

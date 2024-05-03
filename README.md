@@ -44,7 +44,7 @@ This landing page provides an attractive and informative interface for promoting
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/band-site.git
+   git clone https://github.com/namdavid2904/band-site.git
    ```
 
 2. Open the `index.html` file in a web browser to view the landing page.
